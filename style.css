@@ -82,6 +82,11 @@ body {
 	background: #0c0d0d url("images/header.png") repeat-x;
 }
 
+#footer .container,
+#content .container {
+	width: 900px;	
+}
+
 #header {
 	-webkit-box-shadow: 0 4px 10px -2px #000000;
 	-moz-box-shadow: 0 4px 10px -2px #000000;
@@ -164,6 +169,21 @@ body {
 	width: 144px;
 }
 
+#content {
+	padding: 40px 0;
+}
+
+#content .title1,
+#content .title2 {
+	text-align: center;
+}
+
+#content .title1 {
+    color: #d30000;
+    text-transform: uppercase;
+
+}
+
 .clear {
 	clear: both;
 }
@@ -174,38 +194,33 @@ body {
 /*
  ## Contact Page
  */
-#content {
+.contact #content {
 	background: url("images/map.png") no-repeat top center;
 	padding: 65px 0;
 }
 
-#footer .container,
-#content .container {
-	width: 900px;
-}
-
-#content p {
+.contact #content p {
 	text-transform: uppercase;
 	font-weight: bold;
 	line-height: 30px;
 	margin: 10px 0;
 }
 
-#content .contact_image {
+.contact #content .contact_image {
 	background: url("images/contactus.png") no-repeat;
 	margin-bottom: 30px;
 	height: 46px;
 	width: 322px;
 }
 
-#content .contact_form input[type="image"] {
+.contact #content .contact_form input[type="image"] {
 	float: right;
 }
 
-#content .contact_form textarea,
-#content .contact_form input[type="text"],
-#content .contact_form input[type="email"],
-#content .contact_form input[type="number"] {
+.contact #content .contact_form textarea,
+.contact #content .contact_form input[type="text"],
+.contact #content .contact_form input[type="email"],
+.contact #content .contact_form input[type="number"] {
 	background-color: #b3b2b2;
 	-webkit-box-shadow: inset 0 2px 5px -2px #000;
 	-moz-box-shadow: inset 0 2px 5px -2px #000;
@@ -217,37 +232,116 @@ body {
 	padding: 4px 15px;
 }
 
-#content .contact_form input[type="text"],
-#content .contact_form input[type="email"],
-#content .contact_form input[type="number"] {
+.contact #content .contact_form input[type="text"],
+.contact #content .contact_form input[type="email"],
+.contact #content .contact_form input[type="number"] {
 	height: 35px;
 }
 
-#content .contact_form textarea::-webkit-input-placeholder,
-#content .contact_form input[type="text"]::-webkit-input-placeholder,
-#content .contact_form input[type="email"]::-webkit-input-placeholder,
-#content .contact_form input[type="number"]::-webkit-input-placeholder {
+.contact #content .contact_form textarea::-webkit-input-placeholder,
+.contact #content .contact_form input[type="text"]::-webkit-input-placeholder,
+.contact #content .contact_form input[type="email"]::-webkit-input-placeholder,
+.contact #content .contact_form input[type="number"]::-webkit-input-placeholder {
 	font-style: italic;
     color: #000;
 }
 
-#content .contact_form textarea:-moz-placeholder,
-#content .contact_form input[type="text"]:-moz-placeholder,
-#content .contact_form input[type="email"]:-moz-placeholder,
-#content .contact_form input[type="number"]:-moz-placeholder {
+.contact #content .contact_form textarea:-moz-placeholder,
+.contact #content .contact_form input[type="text"]:-moz-placeholder,
+.contact #content .contact_form input[type="email"]:-moz-placeholder,
+.contact #content .contact_form input[type="number"]:-moz-placeholder {
 	font-style: italic;
 	color: #000;
 }
 
-#content .contact_form textarea:-ms-input-placeholder,
-#content .contact_form input[type="text"]:-ms-input-placeholder,
-#content .contact_form input[type="email"]:-ms-input-placeholder,
-#content .contact_form input[type="number"]:-ms-input-placeholder {
+.contact #content .contact_form textarea:-ms-input-placeholder,
+.contact #content .contact_form input[type="text"]:-ms-input-placeholder,
+.contact #content .contact_form input[type="email"]:-ms-input-placeholder,
+.contact #content .contact_form input[type="number"]:-ms-input-placeholder {
 	font-style: italic;
 	color: #000;
 }
 /*
  ## Contact Page
+ */
+
+ /*
+ ## Pricing Page
+ */
+.pricing #prices {
+	text-align: center;
+	margin: 45px auto;
+	width: 848px;
+}
+
+.pricing #prices ul,
+.pricing #prices ul li {
+	float: left;
+}
+
+.pricing #prices ul {
+	list-style: none;
+	margin: 0;
+}
+
+.pricing #prices ul li {
+	background-color: #fff;
+	border: 1px solid #b3b3b3;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	overflow: hidden;
+	margin: 0 10px 10px;
+	width: 260px;
+}
+
+.pricing .gradients {
+	background: url("images/gradients.png") repeat-x;
+}
+
+.pricing .gradients.g1 {
+	background-position: 0 0;
+}
+
+.pricing .gradients.g2 {
+	background-position: 0 -60px;
+}
+
+.pricing #prices .top,
+.pricing #prices .mid {
+	border-bottom: 1px solid #b3b3b3;
+}
+
+.pricing #prices .top p,
+.pricing #prices .top h3,
+.pricing #prices .mid h2 {
+	margin: 0;
+}
+
+.pricing #prices .top {
+	color: #fff;
+}
+
+.pricing #prices .top h3 {
+	line-height: 22px;
+	font-size: 22px;
+}
+
+.pricing #prices .bot .spec,
+.pricing #prices .bot .link,
+.pricing #prices .top .inner {
+	padding: 8px;
+}
+
+.pricing #prices .mid .inner {
+	padding: 10px;
+}
+
+.pricing #prices .bot .spec {
+	border-bottom: 1px solid #e7e7e7;
+}
+ /*
+ ## Pricing Page
  */
 
 @media (max-width: 979px) {
@@ -287,5 +381,15 @@ body {
 	}
 	/*
 	 ## Contact Page
+	 */
+
+	/*
+	 ## Pricing Page
+	 */
+	.pricing #prices {
+		width: 282px;
+	}
+	/*
+	 ## Pricing Page
 	 */
 }
