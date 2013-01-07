@@ -45,14 +45,10 @@
 }
 
 @media (max-width: 767px) {
-	/*.navbar {
-	    padding-top: 0;
+	body {
+	    padding-right: 0;
+	    padding-left: 0;
 	}
-
-	.navbar .nav li a {
-		padding-top: 9px;
-	}*/
-
 }
 
 @media (max-width: 979px) {
@@ -247,6 +243,11 @@ footer .links ul li.divider-vertical {
 
 	.customer-logos {
 		width: auto;
+	}
+
+	.section-bot {
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 
 	footer .links {

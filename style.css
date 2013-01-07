@@ -55,6 +55,11 @@
 }
 
 @media (max-width: 767px) {
+	body {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+
 	.navbar {
 	    padding-top: 0;
 	}
@@ -83,7 +88,8 @@ body {
 }
 
 #footer .container,
-#content .container {
+.contact #content .container,
+.pricing #content .container {
 	width: 900px;	
 }
 
@@ -181,7 +187,17 @@ body {
 #content .title1 {
     color: #d30000;
     text-transform: uppercase;
+}
 
+#content .title2 {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.centered {
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .clear {
@@ -196,7 +212,8 @@ body {
  */
 .contact #content {
 	background: url("images/map.png") no-repeat top center;
-	padding: 65px 0;
+	padding-bottom: 65px;
+	padding-top: 65px;
 }
 
 .contact #content p {
@@ -307,6 +324,16 @@ body {
 	background-position: 0 -60px;
 }
 
+.pricing .buttons {
+	background: url("images/buttons.png") no-repeat;
+	display: block;
+	height: 42px;
+	width: 152px;
+}
+
+.pricing .buttons.plan {
+}
+
 .pricing #prices .top,
 .pricing #prices .mid {
 	border-bottom: 1px solid #b3b3b3;
@@ -344,6 +371,35 @@ body {
  ## Pricing Page
  */
 
+ /*
+ ## Blog Page
+ */
+#content .r .title1,
+#content .r .title2 {
+	text-align: left;
+}
+
+#content .sections {
+	margin: 0;
+}
+
+#content .sections li {
+	list-style-type: none;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#content .sections li a {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 20px;
+	color: #333;
+}
+ /*
+ ## Blog Page
+ */
+
+
 @media (max-width: 979px) {
 	#footer .container,
 	#content .container {
@@ -352,6 +408,18 @@ body {
 }
 
 @media (max-width: 767px) {
+	/*
+	 ## Global styles
+	 */
+	#content {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+
+	/*
+	 ## Global styles
+	 */
+
 	/*
 	 ## Contact Page
 	 */
