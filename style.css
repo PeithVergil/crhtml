@@ -82,6 +82,19 @@ body {
 	background: url("images/honeycomb-w.png");
 }
 
+/* Unstyled lists */
+#posts,
+#footer .links,
+.pricing #prices ul {
+	margin: 0;
+}
+
+#posts li,
+#footer .links li,
+.pricing #prices ul li {
+	list-style-type: none;
+}
+
 #header,
 #footer {
 	background: #0c0d0d url("images/header.png") repeat-x;
@@ -109,14 +122,6 @@ body {
 #footer .links,
 #footer .links li {
 	float: left;
-}
-
-#footer .links {
-	margin: 0;
-}
-
-#footer .links li {
-	list-style-type: none;
 }
 
 #footer p,
@@ -190,9 +195,9 @@ body {
 }
 
 #content .title2 {
-	font-family: Georgia;
+	font-family: Georgia, Times, "Times New Roman", serif;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 1.8em;
 }
 
 .centered {
@@ -296,10 +301,10 @@ body {
 	float: left;
 }
 
-.pricing #prices ul {
+/*.pricing #prices ul {
 	list-style: none;
 	margin: 0;
-}
+}*/
 
 .pricing #prices ul li {
 	background-color: #fff;
@@ -374,25 +379,77 @@ body {
  /*
  ## Blog Page
  */
-#content .r .title1,
-#content .r .title2 {
+.blog #content .r .title1,
+.blog #content .r .title2 {
 	text-align: left;
 }
 
-#content .sections {
+.blog #content .sections {
 	margin: 0;
 }
 
-#content .sections li {
+.blog #content .sections li {
 	list-style-type: none;
 	margin-bottom: 5px;
 	margin-top: 5px;
 }
 
-#content .sections li a {
-	font-family: Georgia;
+.blog #content .sections li a {
+	font-family: Georgia, Times, "Times New Roman", serif;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 1.5em;
+	color: #333;
+}
+
+.blog #content .c {
+	margin-top: 30px;
+}
+
+#posts .post {
+	margin-bottom: 60px;
+}
+
+#posts .post:last-child {
+	margin-bottom: 0;
+}
+
+#posts .inner {
+	padding: 20px 20px 0 20px;
+}
+
+#posts .post_image {
+}
+
+#posts .post_image img {
+	width: 100%;
+}
+
+#posts .post_date,
+#posts .post_data,
+#posts .post_title {
+	margin-bottom: 10px;
+}
+
+#posts .post_title .title2 {
+	text-align: left;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+#posts .post_date span {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #d30000;
+}
+
+.paging {
+	padding: 35px 35px 0;
+}
+
+.paging a {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 2.2em;
 	color: #333;
 }
  /*
