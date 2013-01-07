@@ -301,11 +301,6 @@ body {
 	float: left;
 }
 
-/*.pricing #prices ul {
-	list-style: none;
-	margin: 0;
-}*/
-
 .pricing #prices ul li {
 	background-color: #fff;
 	border: 1px solid #b3b3b3;
@@ -436,10 +431,18 @@ body {
 	margin: 0;
 }
 
+#posts .post_title .title2 a {
+	color: #333;
+}
+
+#posts .post_date span,
+#posts .post_date span a {
+	color: #d30000;
+}
+
 #posts .post_date span {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #d30000;
 }
 
 .paging {
