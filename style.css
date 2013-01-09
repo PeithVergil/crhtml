@@ -95,6 +95,13 @@ body {
 	list-style-type: none;
 }
 
+.blog #content .c,
+.technology #content .c,
+.technology #content .d,
+.technology #content .e {
+	margin-top: 30px;
+}
+
 #header,
 #footer {
 	background: #0c0d0d url("images/header.png") repeat-x;
@@ -102,7 +109,8 @@ body {
 
 #footer .container,
 .contact #content .container,
-.pricing #content .container {
+.pricing #content .container,
+.technology #content .container {
 	width: 900px;	
 }
 
@@ -184,20 +192,20 @@ body {
 	padding: 40px 0;
 }
 
-#content .title1,
-#content .title2 {
-	text-align: center;
-}
-
-#content .title1 {
+.title1 {
+	text-transform: uppercase;
     color: #d30000;
-    text-transform: uppercase;
 }
 
-#content .title2 {
+.title2 {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	font-style: italic;
 	font-size: 1.8em;
+}
+
+#content .a .title1,
+#content .b .title2 {
+	text-align: center;
 }
 
 .centered {
@@ -235,14 +243,14 @@ body {
 	width: 322px;
 }
 
-.contact #content .contact_form input[type="image"] {
+.contact #content .wpcf7-form input[type="image"] {
 	float: right;
 }
 
-.contact #content .contact_form textarea,
-.contact #content .contact_form input[type="text"],
-.contact #content .contact_form input[type="email"],
-.contact #content .contact_form input[type="number"] {
+.contact #content .wpcf7-form textarea,
+.contact #content .wpcf7-form input[type="text"],
+.contact #content .wpcf7-form input[type="email"],
+.contact #content .wpcf7-form input[type="number"] {
 	background-color: #b3b2b2;
 	-webkit-box-shadow: inset 0 2px 5px -2px #000;
 	-moz-box-shadow: inset 0 2px 5px -2px #000;
@@ -254,32 +262,32 @@ body {
 	padding: 4px 15px;
 }
 
-.contact #content .contact_form input[type="text"],
-.contact #content .contact_form input[type="email"],
-.contact #content .contact_form input[type="number"] {
+.contact #content .wpcf7-form input[type="text"],
+.contact #content .wpcf7-form input[type="email"],
+.contact #content .wpcf7-form input[type="number"] {
 	height: 35px;
 }
 
-.contact #content .contact_form textarea::-webkit-input-placeholder,
-.contact #content .contact_form input[type="text"]::-webkit-input-placeholder,
-.contact #content .contact_form input[type="email"]::-webkit-input-placeholder,
-.contact #content .contact_form input[type="number"]::-webkit-input-placeholder {
+.contact #content .wpcf7-form textarea::-webkit-input-placeholder,
+.contact #content .wpcf7-form input[type="text"]::-webkit-input-placeholder,
+.contact #content .wpcf7-form input[type="email"]::-webkit-input-placeholder,
+.contact #content .wpcf7-form input[type="number"]::-webkit-input-placeholder {
 	font-style: italic;
     color: #000;
 }
 
-.contact #content .contact_form textarea:-moz-placeholder,
-.contact #content .contact_form input[type="text"]:-moz-placeholder,
-.contact #content .contact_form input[type="email"]:-moz-placeholder,
-.contact #content .contact_form input[type="number"]:-moz-placeholder {
+.contact #content .wpcf7-form textarea:-moz-placeholder,
+.contact #content .wpcf7-form input[type="text"]:-moz-placeholder,
+.contact #content .wpcf7-form input[type="email"]:-moz-placeholder,
+.contact #content .wpcf7-form input[type="number"]:-moz-placeholder {
 	font-style: italic;
 	color: #000;
 }
 
-.contact #content .contact_form textarea:-ms-input-placeholder,
-.contact #content .contact_form input[type="text"]:-ms-input-placeholder,
-.contact #content .contact_form input[type="email"]:-ms-input-placeholder,
-.contact #content .contact_form input[type="number"]:-ms-input-placeholder {
+.contact #content .wpcf7-form textarea:-ms-input-placeholder,
+.contact #content .wpcf7-form input[type="text"]:-ms-input-placeholder,
+.contact #content .wpcf7-form input[type="email"]:-ms-input-placeholder,
+.contact #content .wpcf7-form input[type="number"]:-ms-input-placeholder {
 	font-style: italic;
 	color: #000;
 }
@@ -374,11 +382,6 @@ body {
  /*
  ## Blog Page
  */
-.blog #content .r .title1,
-.blog #content .r .title2 {
-	text-align: left;
-}
-
 .blog #content .sections {
 	margin: 0;
 }
@@ -394,10 +397,6 @@ body {
 	font-style: italic;
 	font-size: 1.5em;
 	color: #333;
-}
-
-.blog #content .c {
-	margin-top: 30px;
 }
 
 #posts .post {
@@ -459,11 +458,85 @@ body {
  ## Blog Page
  */
 
+/*
+ ## Technology Page
+ */
+.technology .banner {
+}
+
+.technology .banner .top {
+	background: url("images/techs.png") no-repeat;
+	position: relative;
+	display: block;
+	height: 238px;
+	width: 900px;
+}
+
+.technology .banner .top .crphone {
+	background: transparent url("images/phone.png") no-repeat;
+	position: absolute;
+	height: 485px;
+	width: 232px;
+	left: 40px;
+	top: 30px;
+}
+
+.technology .banner .bot {
+	padding: 20px 20px 20px 300px;
+}
+
+.technology #content .banner .bot .title1,
+.technology #content .banner .bot .title2 {
+	margin-top: 0;
+}
+
+.technology #content .banner .bot p,
+.technology #content .banner .bot .title1,
+.technology #content .banner .bot .title2 {
+	margin-bottom: 20px;
+}
+
+.technology #content .banner .bot .more {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 1.8em;
+	color: #d30000;
+}
+
+.technology #content .e .title1 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	text-transform: none;
+	text-align: center;
+	font-style: italic;
+	font-size: 3em;
+}
+
+.technology #content #features .row-fluid {
+	margin-bottom: 30px;
+}
+.technology #content #demos .demo,
+.technology #content #features .feature {
+	text-align: center;
+}
+.technology #content #demos .text,
+.technology #content #features .text {
+	padding: 0 20px;
+}
+/*
+ ## Technology Page
+ */
+
 
 @media (max-width: 979px) {
 	#footer .container,
-	#content .container {
+	#content .container,
+	.technology #content .container,
+	.technology #content .container .banner .top {
 		width: auto;
+	}
+
+	.technology .banner .bot {
+		padding: 300px 0px 20px;
 	}
 }
 
@@ -501,10 +574,10 @@ body {
 		display: none;
 	}
 
-	#content .contact_form textarea,
-	#content .contact_form input[type="text"],
-	#content .contact_form input[type="email"],
-	#content .contact_form input[type="number"] {
+	#content .wpcf7-form textarea,
+	#content .wpcf7-form input[type="text"],
+	#content .wpcf7-form input[type="email"],
+	#content .wpcf7-form input[type="number"] {
 		margin-left: 0;
 	}
 	/*
